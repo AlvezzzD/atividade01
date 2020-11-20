@@ -3,12 +3,16 @@
     <head> 
         <title> Aprendizagem </title>
         <meta charset = "utf-8"/>
-        <link href="css/css.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-whidth, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="css/css.css" rel="stylesheet"/>  
         <style type = "text/css" >
 
        
         body {
             background: url(imagens/foto5.jpg);
+            margin: 30px; 
         }
         /*p {
             color: black;
@@ -29,6 +33,11 @@
             font-size: 20px;
             padding: 15px;*/
         }
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 40px 100px 40px;
+        }
         *{
             font-size: 12px;
             margin: 0%;
@@ -40,37 +49,47 @@
         }
         .estilo_texto01 {
             font-size: 20px;
-            color: #ff0000;
+            color: #972a1c;
             margin: 15px;
         }
         .legenda {
             font-size: 15px;
             margin: 10px;
         }
-        .texto001 {
-            font-size: 12px;
-            margin: 03px;
+        .estilo_ttt{
+            font-size: 20px;
+            margin: 3px;
 
         }
 
         div #nome_escola h2.estilo_texto01  {
             color: royalblue;
 
-        
         }
-        
+        .my-container {
+            border: 3px solid rgb(250, 250, 250);
+        }
+
+        .my-row {
+            border: 3px solid rgb(5, 0, 7);
+            height: 100x;
+        }
+
+        .my-col {
+            border: 3px dotted rgb(255, 238, 0);
+        }
         </style>
 
     </head>
     <body> 
 
-        <h1 id="nome-escola"> Universidade Aprenda já </h1> 
-    </br />
-    <center>
-        <h2 class="estilo_tesxto01"> Melhor universidade do seu bairro </h2>
-    </center>    
+        <h1 id="nome-escola"> Universidade Aprenda já </h1>
+        </br />
+        <center>
+        <h2 class="estilo_ttt"> Melhor universidade do seu bairro </h2>
+        </center>    
         <h3 class="estilo_texto01"> Para que o País realmente tenha uma educação de qualidade, é preciso implementar uma política pública que envolva todo o ecossistema educacional, com a participação conjunta de líderes políticos, gestores escolares, professores, pais, alunos, empresas e a própria comunidade do entorno das escolas e isso tudo você so encontra aqui!!!</h3>
-    </br />
+        </br />
         <center>
             <img src= "imagens/foto1.jpg" alt="" />
             <p class="legenda"> ENGENHARIA DA COMPUTAÇAO </p> </br />
@@ -100,17 +119,33 @@
             <p class="legenda"> MEDICINA </p> </br />
             <p class="texto001"> Para se tornar um médico, é preciso cursar um bacharelado em Medicina, durante, no mínimo, seis anos. O profissional também precisa se registrar no Conselho de Medicina do seu estado. Durante esse período, a grade curricular é dividida nos ciclos básico, clínico e internato.</p> </br />
         </br />
-        </center>
-        <article>
-            <p>
-                kahskdhakjs
-            </p>
-        </article>
+        <h4>LOCALIZAÇAO UNIVERSIDADES </h4>
+        <div class="container my-container">
+            <div class="row my-row">
+                <div class="col-md-4 col-sm-6 my-col">
+                    Professores disponiveis na unidade Butanta/zona Oeste 
+                </div>
+                <div class="col-md-8 col-sm-6 my-col">
+                    Professores disponiveis na unidade Itapevi/zona Leste 
+                </div>
+            </div>    
+            <div class="row justify-content-between alingn-items-stretch my-row">
+                <div class="col-4 my-col order-md-12">
+                    Professores disponiveis na unidade Grájau/zona Sul
+                </div>
+                <div class="col-4 offset-md-2 my-col align-self-start order-md-2">
+                    Professores disponiveis na unidade Santana/zona Norte
+                </div> 
+            </div> 
+            </div>
         <center>
         <footer>
             <p class="estilo_texto01"> Endereço: Rua Algusto de Munhos N°55 </p>
             <p class="estilo_texto01"> Tel:3736-440000 </p>
         </footer>
         </center>
+        <script>
+          alert("Universidade Aprenda já");
+        </script>
     </body>    
 </html> 
